@@ -1,1 +1,1 @@
-My Neovim Config
+My personal comoutor configuration for macos.
