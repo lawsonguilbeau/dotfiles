@@ -116,7 +116,7 @@ return packer.startup(function(use)
 		event = "VimEnter",
 		config = function()
 			require("dashboard").setup({
-				config,
+				-- config
 			})
 		end,
 		requires = { "nvim-tree/nvim-web-devicons" },
