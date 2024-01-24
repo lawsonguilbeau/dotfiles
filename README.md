@@ -1,1 +1,1 @@
-My personal comoutor configuration for macos.
+My personal computor configuration for macos.
