@@ -1,21 +1,15 @@
-require("lawsonguilbeau.plugins-setup")
-require("lawsonguilbeau.core.options")
-require("lawsonguilbeau.core.keymaps")
-require("lawsonguilbeau.core.colorscheme")
-require("lawsonguilbeau.plugins.comment")
-require("lawsonguilbeau.plugins.nvim-tree")
-require("lawsonguilbeau.plugins.lualine")
-require("lawsonguilbeau.plugins.telescope")
-require("lawsonguilbeau.plugins.nvim-cmp")
-require("lawsonguilbeau.plugins.lsp.mason")
-require("lawsonguilbeau.plugins.lsp.lspsaga")
-require("lawsonguilbeau.plugins.lsp.lspconfig")
-require("lawsonguilbeau.plugins.lsp.null-ls")
-require("lawsonguilbeau.plugins.autopairs")
-require("lawsonguilbeau.plugins.treesitter")
-require("lawsonguilbeau.plugins.gitsigns")
-require("lawsonguilbeau.plugins.hbac")
-require("neoscroll").setup()
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
-vim.opt.termguicolors = true
-require("bufferline").setup({})
+require("vim-options")
+require("lazy").setup("plugins")
