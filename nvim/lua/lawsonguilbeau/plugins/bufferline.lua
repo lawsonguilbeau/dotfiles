@@ -43,3 +43,4 @@ bufferline.setup({
 		},
 	},
 })
+print
