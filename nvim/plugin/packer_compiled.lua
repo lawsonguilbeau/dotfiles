@@ -255,6 +255,11 @@ _G.packer_plugins = {
     path = "/Users/lawsonguilbeau/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/lawsonguilbeau/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/lawsonguilbeau/.local/share/nvim/site/pack/packer/start/vim-maximizer",

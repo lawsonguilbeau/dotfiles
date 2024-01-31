@@ -62,3 +62,7 @@ keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
 
 -- transparency toggle
 keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<cr>")
+
+-- Gitsigns Preview
+keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
+keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>")
