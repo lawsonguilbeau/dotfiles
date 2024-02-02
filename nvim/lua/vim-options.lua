@@ -61,13 +61,18 @@ opt.iskeyword:append("-") -- consider string-string as whole word
 -- General Keymaps
 ---------------------
 
--- use jk to exit insert mode
+-- use jk to exit insert and visual mode
 keymap.set("i", "jk", "<ESC>")
+keymap.set("v", "jk", "<ESC>")
 
 keymap.set("n", "v", "v")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+-- bufferline
+keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
+keymap.set("n", "<leader>bc", ":BufferLineCloseOthers<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
