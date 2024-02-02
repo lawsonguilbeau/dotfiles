@@ -16,7 +16,7 @@ require("lazy").setup("plugins")
 
 require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
   install = {
-    colorscheme = { "catppuccin" },
+    colorscheme = { "nightfly" },
   },
   checker = { enabled = true, notify = false },
   change_detection = { enabled = false },
