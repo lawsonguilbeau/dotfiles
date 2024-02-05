@@ -12,14 +12,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
-require("lazy").setup("plugins")
+-- require("lazy").setup("plugins")
 
--- optional setup call
-
--- require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
--- install = {
---   colorscheme = { "nightfly" },
--- },
--- checker = { enabled = true, notify = false },
--- change_detection = { enabled = false },
--- })
+require("lazy").setup({ { import = "plugins" }, { import = "plugins" } }, {
+  install = {
+    colorscheme = { "catppuccin" },
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
