@@ -81,6 +81,12 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
+-- window naviation
+keymap.set("n", "C-k", ":TmuxNavigateUp<CR>")
+keymap.set("n", "C-j", ":TmuxNavigateDown<CR>")
+keymap.set("n", "C-h", ":TmuxNavigateLeft<CR>")
+keymap.set("n", "C-l", ":TmuxNavigateRight<CR>")
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
