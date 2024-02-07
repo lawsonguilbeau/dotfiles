@@ -70,6 +70,17 @@ keymap.set("n", "v", "v")
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- write and quit easily
+keymap.set("n", "<leader>wq", ":wq<CR>")
+keymap.set("n", "<leader>ww", ":w<CR>")
+keymap.set("n", "<leader>qq", ":q<CR>")
+
+-- Git
+keymap.set("n", "<leader>gs", ":Git status<CR>")
+keymap.set("n", "<leader>ga", ":Git add .<CR>")
+keymap.set("n", "<leader>gc", ":Git commit -m ")
+keymap.set("n", "<leader>go", ":Git push<CR>")
+
 -- bufferline
 keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
 keymap.set("n", "<leader>bc", ":BufferLineCloseOthers<CR>")
