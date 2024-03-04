@@ -58,6 +58,9 @@ shift + alt - 7 : yabai -m window --space 7;
 # restart sketchybar
 alt + cmd - r : sketchybar --reload
 
+# update homebrew packages and restart sketchybar
+alt + cmd - b : brew upgrade && sketchybar --reload
+
 # stop/start/restart yabai
 ctrl + alt - q : yabai --stop-service
 ctrl + alt - s : yabai --start-service
