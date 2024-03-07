@@ -16,7 +16,7 @@ require("vim-options")
 
 require("lazy").setup({ { import = "plugins" }, { import = "plugins" } }, {
   install = {
-    colorscheme = { "catppuccin" },
+    colorscheme = { "moonfly" },
   },
   checker = {
     enabled = true,

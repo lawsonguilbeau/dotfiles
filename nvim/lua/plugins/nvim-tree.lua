@@ -4,7 +4,7 @@ return {
     "nvim-tree/nvim-web-devicons",
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
-    "catppuccin/nvim",
+    "bluz71/vim-moonfly-colors",
   },
   config = function()
     local nvimtree = require("nvim-tree")
