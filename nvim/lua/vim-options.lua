@@ -85,6 +85,9 @@ keymap.set("n", "<leader>go", ":Git push<CR>")
 keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
 keymap.set("n", "<leader>bc", ":BufferLineCloseOthers<CR>")
 
+-- dashboard
+keymap.set("n", "<leader>db", ":Dashboard<CR>")
+
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
