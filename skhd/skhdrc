@@ -58,6 +58,9 @@ shift + alt - 7 : yabai -m window --space 7;
 # restart sketchybar
 alt + cmd - r : sketchybar --reload
 
+# lazygit popup
+ctrl + alt - t : tmux display-popup -E -w 90% -h 90% lazygit
+
 # update homebrew packages and restart sketchybar
 alt + cmd - b : brew upgrade && sketchybar --reload
 
