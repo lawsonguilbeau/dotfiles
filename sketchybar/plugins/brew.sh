@@ -13,7 +13,7 @@ case "$COUNT" in
   ;;
   [1-9]) COLOR=$WHITE
   ;;
-  0) COLOR=$GREEN
+  0) COLOR=$WHITE
      COUNT=􀆅
   ;;
 esac
