@@ -65,7 +65,7 @@ const rules: KarabinerRules[] = [
     },
     // o = "Open" applications
     o: {
-      v: app("Xcode"),
+      x: app("Xcode"),
       d: app("Discord"),
       s: app("Safari"),
       t: app("iTerm"),
@@ -155,6 +155,17 @@ const rules: KarabinerRules[] = [
       l: {
         to: [{ key_code: "right_arrow" }],
       },
+      // Magicmove via homerow.app
+      m: {
+        to: [{ key_code: "f", modifiers: ["right_control"] }],
+      },
+      // Scroll mode via homerow.app
+      s: {
+        to: [{ key_code: "j", modifiers: ["right_control"] }],
+      },
+      d: {
+        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
+      },
       u: {
         to: [{ key_code: "page_down" }],
       },
@@ -185,6 +196,9 @@ const rules: KarabinerRules[] = [
       ),
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1",
+      ),
+      2: open(
+        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2",
       ),
     },
   }),
