@@ -186,9 +186,6 @@ const rules: KarabinerRules[] = [
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1",
       ),
-      2: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2",
-      ),
     },
   }),
 ];
