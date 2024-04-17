@@ -136,14 +136,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      // Turn on Elgato KeyLight
-      y: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 1, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
       h: {
         to: [
           {
