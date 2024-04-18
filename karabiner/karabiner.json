@@ -1250,6 +1250,30 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/SawyerHollenshead/typesnob/typesnob"
+                  }
+                ],
+                "description": "Open raycast://extensions/SawyerHollenshead/typesnob/typesnob",
+                "type": "basic",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
               }
             ]
           }
