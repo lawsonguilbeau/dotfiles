@@ -73,6 +73,10 @@ const rules: KarabinerRules[] = [
       f: app("Finder"),
       r: app("Texts"),
       m: app("Music"),
+      g: app("iGradePlus"),
+      x: app("Xcode"),
+      c: app("Google Classroom"),
+      p: app("Pages"),
     },
 
     // s = "System"
