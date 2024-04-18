@@ -424,37 +424,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Apple Music.app'"
+                    "shell_command": "open -a 'Music.app'"
                   }
                 ],
-                "description": "Open -a 'Apple Music.app'",
+                "description": "Open -a 'Music.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "m",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-                  }
-                ],
-                "description": "Open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink",
-                "type": "basic",
-                "from": {
-                  "key_code": "l",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -920,85 +896,6 @@
               {
                 "to": [
                   {
-                    "key_code": "f",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "m",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "j",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "d",
-                    "modifiers": [
-                      "right_shift",
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
                     "key_code": "page_down"
                   }
                 ],
@@ -1247,30 +1144,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
-                  }
-                ],
-                "description": "Open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1",
-                "type": "basic",
-                "from": {
-                  "key_code": "1",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
                     "value": 1
                   }
                 ]

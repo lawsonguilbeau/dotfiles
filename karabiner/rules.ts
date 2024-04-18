@@ -72,10 +72,7 @@ const rules: KarabinerRules[] = [
       t: app("Messages"),
       f: app("Finder"),
       r: app("Texts"),
-      m: app("Apple Music"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      m: app("Music"),
     },
 
     // s = "System"
@@ -158,17 +155,6 @@ const rules: KarabinerRules[] = [
       l: {
         to: [{ key_code: "right_arrow" }],
       },
-      // Magicmove via homerow.app
-      m: {
-        to: [{ key_code: "f", modifiers: ["right_control"] }],
-      },
-      // Scroll mode via homerow.app
-      s: {
-        to: [{ key_code: "j", modifiers: ["right_control"] }],
-      },
-      d: {
-        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
-      },
       u: {
         to: [{ key_code: "page_down" }],
       },
@@ -200,9 +186,6 @@ const rules: KarabinerRules[] = [
       p: open("raycast://extensions/raycast/raycast/confetti"),
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
-      1: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
       ),
     },
   }),
