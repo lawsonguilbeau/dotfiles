@@ -21,7 +21,7 @@ type HyperKeySublayer = {
 export function createHyperSubLayer(
   sublayer_key: KeyCode,
   commands: HyperKeySublayer,
-  allSubLayerVariables: string[]
+  allSubLayerVariables: string[],
 ): Manipulator[] {
   const subLayerVariableName = generateSubLayerVariableName(sublayer_key);
 
@@ -54,13 +54,13 @@ export function createHyperSubLayer(
           },
         },
       ],
-      // This enables us to press other sublayer keys in the current sublayer
+      // This enables the ability to press other sublayer keys in the current sublayer
       // (e.g. Hyper + O > M even though Hyper + M is also a sublayer)
       // basically, only trigger a sublayer if no other sublayer is active
       conditions: [
         ...allSubLayerVariables
           .filter(
-            (subLayerVariable) => subLayerVariable !== subLayerVariableName
+            (subLayerVariable) => subLayerVariable !== subLayerVariableName,
           )
           .map((subLayerVariable) => ({
             type: "variable_if" as const,
@@ -93,7 +93,7 @@ export function createHyperSubLayer(
             value: 1,
           },
         ],
-      })
+      }),
     ),
   ];
 }
@@ -139,9 +139,9 @@ export function createHyperSubLayers(subLayers: {
           manipulators: createHyperSubLayer(
             key as KeyCode,
             value,
-            allSubLayerVariables
+            allSubLayerVariables,
           ),
-        }
+        },
   );
 }
 
