@@ -163,10 +163,10 @@ const rules: KarabinerRules[] = [
       l: {
         to: [{ key_code: "right_arrow" }],
       },
-      u: {
+      i: {
         to: [{ key_code: "page_down" }],
       },
-      i: {
+      u: {
         to: [{ key_code: "page_up" }],
       },
     },
