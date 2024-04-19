@@ -78,6 +78,7 @@ const rules: KarabinerRules[] = [
       c: app("Google Classroom"),
       p: app("Pages"),
       k: app("Karabiner-Elements"),
+      e: app("Mail"),
     },
 
     // s = "System"
