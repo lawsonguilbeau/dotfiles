@@ -79,6 +79,7 @@ const rules: KarabinerRules[] = [
       p: app("Pages"),
       k: app("Karabiner-Elements"),
       e: app("Mail"),
+      a: app("Steam"),
     },
 
     // s = "System"
