@@ -1326,10 +1326,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://script-commands/dismiss-notifications"
+                    "shell_command": "open raycast://extensions/raycast/floating-notes/toggle-floating-notes-window"
                   }
                 ],
-                "description": "Open raycast://script-commands/dismiss-notifications",
+                "description": "Open raycast://extensions/raycast/floating-notes/toggle-floating-notes-window",
                 "type": "basic",
                 "from": {
                   "key_code": "n",
