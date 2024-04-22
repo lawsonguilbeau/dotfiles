@@ -197,7 +197,7 @@ const rules: KarabinerRules[] = [
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
-      t: open("raycast://extensions/SawyerHollenshead/typesnob/typesnob"),
+      t: open("raycast://extensions/raycast/system/empty-trash"),
     },
   }),
 ];

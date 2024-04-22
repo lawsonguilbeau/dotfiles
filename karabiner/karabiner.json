@@ -1446,10 +1446,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/SawyerHollenshead/typesnob/typesnob"
+                    "shell_command": "open raycast://extensions/raycast/system/empty-trash"
                   }
                 ],
-                "description": "Open raycast://extensions/SawyerHollenshead/typesnob/typesnob",
+                "description": "Open raycast://extensions/raycast/system/empty-trash",
                 "type": "basic",
                 "from": {
                   "key_code": "t",
