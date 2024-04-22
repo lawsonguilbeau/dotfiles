@@ -81,6 +81,7 @@ const rules: KarabinerRules[] = [
       k: app("Karabiner-Elements"),
       e: app("Mail"),
       a: app("Steam"),
+      v: app("ChatGPT"),
     },
 
     // s = "System"
