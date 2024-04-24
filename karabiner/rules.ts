@@ -147,6 +147,8 @@ const rules: KarabinerRules[] = [
       },
       // "D"o not disturb toggle
       d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
+      // "T"rash
+      t: open(`raycast://extensions/raycast/system/empty-trash`),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
@@ -198,7 +200,7 @@ const rules: KarabinerRules[] = [
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
-      t: open("raycast://extensions/raycast/system/empty-trash"),
+      g: open("raycast://extensions/raycast/ray-so/create-image-from-code"),
     },
   }),
 ];

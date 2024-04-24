@@ -929,6 +929,30 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/system/empty-trash"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/system/empty-trash",
+                "type": "basic",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -1470,13 +1494,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/system/empty-trash"
+                    "shell_command": "open raycast://extensions/raycast/ray-so/create-image-from-code"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/system/empty-trash",
+                "description": "Open raycast://extensions/raycast/ray-so/create-image-from-code",
                 "type": "basic",
                 "from": {
-                  "key_code": "t",
+                  "key_code": "g",
                   "modifiers": {
                     "optional": [
                       "any"
