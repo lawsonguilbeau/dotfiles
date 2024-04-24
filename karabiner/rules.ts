@@ -63,6 +63,7 @@ const rules: KarabinerRules[] = [
     b: {
       g: open("https://github.com"),
       f: open("https://www.fandom.com"),
+      y: open("https://www.youtube.com"),
     },
     // o = "Open" applications
     o: {
