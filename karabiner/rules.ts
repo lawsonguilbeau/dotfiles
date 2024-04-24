@@ -200,7 +200,6 @@ const rules: KarabinerRules[] = [
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
-      g: open("raycast://extensions/raycast/ray-so/create-image-from-code"),
     },
   }),
 ];
