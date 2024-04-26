@@ -1,0 +1,32 @@
+# By Josean Martinez
+# Color update for Alacritty by Lawson Guilbeau
+
+# Default colors
+[colors.primary]
+background = '#010C18'
+foreground = '#CBE0F0'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = "#011423"
+cursor = "#3AFF9C"
+
+[colors.normal]
+black = "#022D51"
+red = "#FF3A3B"
+green = "#17FDA2"
+yellow = "#FFF484"
+blue = "#1576F8"
+magenta = "#FF53B0"
+cyan = "#17FDA2"
+white = "#17FDA1"
+
+[colors.bright]
+black = "#022D51"
+red = "#FF3A3B"
+green = "#17FDA2"
+yellow = "#FFF484"
+blue = "#1576F8"
+magenta = "#FF53B0"
+cyan = "#17FDA2"
+white = "#17FDA1"
