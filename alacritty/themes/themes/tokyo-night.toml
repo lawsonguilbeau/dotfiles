@@ -6,6 +6,11 @@
 background = '#1a1b26'
 foreground = '#C0CAF5'
 
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = "#011423"
+cursor = "#C0CAF5"
+
 # Normal colors
 [colors.normal]
 black   = '#32344a'
