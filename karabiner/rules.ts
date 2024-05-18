@@ -83,6 +83,7 @@ const rules: KarabinerRules[] = [
       e: app("Mail"),
       a: app("Steam"),
       v: app("ChatGPT"),
+      b: app("xemu"),
     },
 
     // s = "System"
