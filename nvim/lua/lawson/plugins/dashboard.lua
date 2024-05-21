@@ -68,7 +68,7 @@ return {
               action = "qa",
             },
           },
-          footer = { "Note to self: Git gud scrub" }, --your footer
+          footer = {}, --your footer
         },
       })
 
