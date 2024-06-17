@@ -56,7 +56,7 @@ return {
             {
               icon = "󰁯 ",
               desc = "Restore Session For Current Directory           ",
-              key = "SPC sr",
+              key = "SPC wr",
               key_format = " %s", -- remove default surrounding `[]`
               action = "SessionRestore",
             },
