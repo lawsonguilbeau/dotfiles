@@ -63,6 +63,7 @@ const rules: KarabinerRules[] = [
     b: {
       g: open("https://github.com"),
       y: open("https://www.youtube.com"),
+      t: open("https://tailwindcss.com/docs/guides/sveltekit"),
     },
     // o = "Open" applications
     o: {
