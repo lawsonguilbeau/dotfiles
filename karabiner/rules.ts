@@ -65,6 +65,7 @@ const rules: KarabinerRules[] = [
       y: open("https://www.youtube.com"),
       t: open("https://tailwindcss.com/docs/guides/sveltekit"),
       w: open("https://terraria.wiki.gg/wiki/Terraria_Wiki"),
+      c: open("https://calamitymod.wiki.gg/wiki/Calamity_Mod_Wiki"),
     },
     // o = "Open" applications
     o: {
