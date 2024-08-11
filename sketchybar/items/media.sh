@@ -2,7 +2,7 @@
 
 sketchybar --add item media center \
            --set media label.color=$ACCENT_COLOR \
-                       label.max_chars=30 \
+                       label.max_chars=40 \
                        icon.padding_left=0 \
                        scroll_texts=on \
                        icon=􀑪             \
