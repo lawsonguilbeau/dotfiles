@@ -17,6 +17,6 @@ decorations = "Buttonless"
 option_as_alt = "Both"
 
 [font]
-normal.family = "MesloLGS Nerd Font Mono"
+normal.family = "JetBrainsMono Nerd Font"
 
 size = 20
