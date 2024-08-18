@@ -76,7 +76,7 @@ const rules: KarabinerRules[] = [
       t: app("Messages"),
       f: app("Finder"),
       r: app("Texts"),
-      m: app("Music"),
+      m: app("Spotify"),
       g: app("iGradePlus"),
       x: app("Xcode"),
       c: app("Google Classroom"),
