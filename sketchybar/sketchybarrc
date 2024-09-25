@@ -13,37 +13,37 @@ sketchybar --bar height=46 \
       border_color=0x881A1B26
 
 ############## GLOBAL DEFAULTS ##############
-sketchybar --default updates=when_shown \
-      icon.font="SF Pro:Bold:16.0" \
-      icon.color=0xffCAD3F5 \
-      icon.highlight_color=0xff728FCB \
-      label.color=0xffCAD3F5 \
-      background.corner_radius=5 background.height=40
-
-SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
-SPACES=()
-
-for i in "${!SPACE_ICONS[@]}"; do
-      sid=$(($i + 1))
-      SPACES+=(space.$sid)
-      sketchybar --add space space.$sid center \
-            --set space.$sid associated_space=$sid \
-            icon=${SPACE_ICONS[i]} \
-            icon.font="SF Pro:bold:17.0" \
-            icon.padding_left=12 \
-            icon.padding_right=12 \
-            icon.highlight_color=0xffE48FA8 \
-            background.padding_left=-3 \
-            background.padding_right=-3 \
-            background.color=0x003C3E4F \
-            background.drawing=on \
-            click_script="yabai -m space --focus $sid" \
-            background.corner_radius=8
-done
-
-SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
-SPACES=()
-
+# sketchybar --default updates=when_shown \
+#       icon.font="SF Pro:Bold:16.0" \
+#       icon.color=0xffCAD3F5 \
+#       icon.highlight_color=0xff728FCB \
+#       label.color=0xffCAD3F5 \
+#       background.corner_radius=5 background.height=40
+#
+# SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
+# SPACES=()
+#
+# for i in "${!SPACE_ICONS[@]}"; do
+#       sid=$(($i + 1))
+#       SPACES+=(space.$sid)
+#       sketchybar --add space space.$sid center \
+#             --set space.$sid associated_space=$sid \
+#             icon=${SPACE_ICONS[i]} \
+#             icon.font="SF Pro:bold:17.0" \
+#             icon.padding_left=12 \
+#             icon.padding_right=12 \
+#             icon.highlight_color=0xffE48FA8 \
+#             background.padding_left=-3 \
+#             background.padding_right=-3 \
+#             background.color=0x003C3E4F \
+#             background.drawing=on \
+#             click_script="yabai -m space --focus $sid" \
+#             background.corner_radius=8
+# done
+#
+# SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
+# SPACES=()
+#
 ############## ITEM DEFAULTS ###############
 sketchybar --default label.padding_left=6 \
       label.padding_right=6 \
