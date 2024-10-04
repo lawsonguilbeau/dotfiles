@@ -4,5 +4,5 @@ alt + cmd - r : sketchybar --reload
 # update homebrew packages and restart sketchybar
 alt + cmd - b : brew upgrade && sketchybar --reload
 
-# stop/start/restart yabai
-ctrl + alt - r : borders order=above
+# makes borders above the window
+shift + ctrl - r : borders order=above
