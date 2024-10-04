@@ -90,10 +90,10 @@ alt-comma = 'layout accordion horizontal vertical'
 alt-shift-m = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-shift-h = 'focus left'
-shift-j = 'focus down'
-shift-k = 'focus up'
-shift-l = 'focus right'
+ctrl-h = 'focus left'
+ctrl-j = 'focus down'
+ctrl-k = 'focus up'
+ctrl-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 shift-ctrl-h = 'move left'
@@ -144,10 +144,10 @@ r = ['flatten-workspace-tree', 'mode main'] # reset layout
 f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+ctrl-shift-h = ['join-with left', 'mode main']
+ctrl-shift-j = ['join-with down', 'mode main']
+ctrl-shift-k = ['join-with up', 'mode main']
+ctrl-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
