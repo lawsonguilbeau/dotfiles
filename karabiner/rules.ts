@@ -66,6 +66,7 @@ const rules: KarabinerRules[] = [
       t: open("https://tailwindcss.com/docs/guides/sveltekit"),
       w: open("https://terraria.wiki.gg/wiki/Terraria_Wiki"),
       c: open("https://calamitymod.wiki.gg/wiki/Calamity_Mod_Wiki"),
+      m: open("https://monkeytype.com/"),
     },
     // o = "Open" applications
     o: {
