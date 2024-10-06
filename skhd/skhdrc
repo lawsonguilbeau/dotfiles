@@ -1,8 +1,5 @@
-# restart sketchybar
-alt + cmd - r : sketchybar --reload
+# makes borders above the window
+shift + ctrl - r : borders order=above && sketchybar --reload
 
 # update homebrew packages and restart sketchybar
 alt + cmd - b : brew upgrade && sketchybar --reload
-
-# makes borders above the window
-shift + ctrl - r : borders order=above
