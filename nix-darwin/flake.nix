@@ -5,11 +5,15 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
   let
     configuration = { pkgs, config, ... }: {
+
+      nixpkgs.config.allowUnfree = true;
+
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
@@ -18,7 +22,16 @@
           pkgs.mkalias
           pkgs.neovim
           pkgs.tmux
+          pkgs.lazygit
         ];
+
+      homebrew = {
+        enable = true;
+        casks = [
+          "discord"
+        ];
+        onActivation.cleanup = "zap";
+      };
 
         system.activationScripts.applications.text = let
           env = pkgs.buildEnv {
@@ -66,7 +79,17 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Lawsons-MacBook-Pro
     darwinConfigurations."Lawsons-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-      modules = [ configuration ];
+      modules = [ 
+      configuration
+      nix-homebrew.darwinModules.nix-homebrew
+        {
+          nix-homebrew = {
+            enable = true;
+            enableRosetta = true;
+            user = "lawsonguilbeau";
+            };
+          }
+      ];
     };
 
     # Expose the package set, including overlays, for convenience.
