@@ -18,17 +18,38 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
-          pkgs.wezterm
           pkgs.mkalias
           pkgs.neovim
           pkgs.tmux
           pkgs.lazygit
+          pkgs.colorls
+          pkgs.fzf
+          pkgs.ripgrep
+          pkgs.fd
+          pkgs.skhd
+          pkgs.spicetify-cli
+          pkgs.jq
+          pkgs.yazi
+          pkgs.bat
         ];
 
       homebrew = {
         enable = true;
+        brews = [
+          "sketchybar"
+          "borders"
+        ];
         casks = [
           "discord"
+          "wezterm"
+          "mos"
+          "spotify"
+          "firefox"
+          "karabiner-elements"
+          "nikitabobko/tap/aerospace"
+        ];
+        taps = [
+          "FelixKratz/formulae"
         ];
         onActivation.cleanup = "zap";
       };
@@ -52,6 +73,12 @@
             ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
           done
         '';
+
+      system.defaults = {
+        loginwindow.GuestEnabled = false;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
+      };
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
