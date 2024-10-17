@@ -31,6 +31,7 @@
           pkgs.jq
           pkgs.yazi
           pkgs.bat
+          pkgs.aerospace
         ];
 
       homebrew = {
@@ -46,9 +47,9 @@
           "spotify"
           "firefox"
           "karabiner-elements"
-          "nikitabobko/tap/aerospace"
           "sf-symbols"
           "raycast"
+          "obsidian"
         ];
         taps = [
           "FelixKratz/formulae"
