@@ -32,6 +32,7 @@
           pkgs.yazi
           pkgs.bat
           pkgs.aerospace
+          pkgs.nodejs_22
         ];
 
       homebrew = {
