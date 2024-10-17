@@ -47,6 +47,8 @@
           "firefox"
           "karabiner-elements"
           "nikitabobko/tap/aerospace"
+          "sf-symbols"
+          "raycast"
         ];
         taps = [
           "FelixKratz/formulae"
