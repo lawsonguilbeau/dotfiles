@@ -56,6 +56,8 @@
           "FelixKratz/formulae"
         ];
         onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
       };
 
         system.activationScripts.applications.text = let
