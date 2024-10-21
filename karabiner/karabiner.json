@@ -1172,7 +1172,7 @@
                                 ],
                                 "description": "Open raycast://extensions/raycast/system/open-camera",
                                 "from": {
-                                    "key_code": "c",
+                                    "key_code": "m",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open raycast://extensions/raycast/system/open-camera" }],
@@ -1214,16 +1214,6 @@
                     }
                 ]
             },
-            "devices": [
-                {
-                    "disable_built_in_keyboard_if_exists": true,
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 24926,
-                        "vendor_id": 7504
-                    }
-                }
-            ],
             "name": "Default",
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
