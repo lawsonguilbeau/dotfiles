@@ -52,6 +52,7 @@
           "sf-symbols"
           "raycast"
           "obsidian"
+          "selfcontrol"
         ];
         taps = [
           "FelixKratz/formulae"
