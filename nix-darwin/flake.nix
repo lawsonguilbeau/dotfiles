@@ -53,6 +53,7 @@
           "raycast"
           "obsidian"
           "selfcontrol"
+          "command-x"
         ];
         taps = [
           "FelixKratz/formulae"
