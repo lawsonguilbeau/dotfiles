@@ -33,6 +33,7 @@
           pkgs.bat
           pkgs.aerospace
           pkgs.nodejs_22
+          pkgs.yarn
         ];
 
       homebrew = {
