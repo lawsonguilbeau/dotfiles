@@ -54,6 +54,7 @@
           "obsidian"
           "selfcontrol"
           "command-x"
+          "spotify"
         ];
         taps = [
           "FelixKratz/formulae"
