@@ -195,9 +195,7 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
-      n: open(
-        "raycast://extensions/raycast/floating-notes/toggle-floating-notes-window"
-      ),
+      n: open("raycast://extensions/raycast/raycast-notes/raycast-notes"),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
