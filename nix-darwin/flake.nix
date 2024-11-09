@@ -34,6 +34,7 @@
           pkgs.aerospace
           pkgs.nodejs_22
           pkgs.yarn
+          pkgs.pass
         ];
 
       homebrew = {
