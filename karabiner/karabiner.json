@@ -161,42 +161,10 @@
                                 ],
                                 "description": "Open https://tailwindcss.com/docs/guides/sveltekit",
                                 "from": {
-                                    "key_code": "t",
+                                    "key_code": "s",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open https://tailwindcss.com/docs/guides/sveltekit" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_b",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open https://terraria.wiki.gg/wiki/Terraria_Wiki",
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open https://terraria.wiki.gg/wiki/Terraria_Wiki" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_b",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open https://calamitymod.wiki.gg/wiki/Calamity_Mod_Wiki",
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open https://calamitymod.wiki.gg/wiki/Calamity_Mod_Wiki" }],
                                 "type": "basic"
                             },
                             {
