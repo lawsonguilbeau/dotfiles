@@ -56,6 +56,7 @@
           "selfcontrol"
           "command-x"
           "spotify"
+          "zen-browser"
         ];
         taps = [
           "FelixKratz/formulae"
