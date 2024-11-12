@@ -42,6 +42,9 @@
         brews = [
           "sketchybar"
           "borders"
+          "switchaudio-osx"
+          "lua"
+          "nowplaying-cli"
         ];
         casks = [
           "discord"
