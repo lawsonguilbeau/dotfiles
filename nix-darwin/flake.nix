@@ -51,7 +51,6 @@
           "wezterm"
           "mos"
           "spotify"
-          "firefox"
           "karabiner-elements"
           "sf-symbols"
           "raycast"
@@ -59,7 +58,7 @@
           "selfcontrol"
           "command-x"
           "spotify"
-          "zen-browser"
+          "arc"
         ];
         taps = [
           "FelixKratz/formulae"
