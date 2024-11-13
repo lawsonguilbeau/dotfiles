@@ -35,6 +35,7 @@
           pkgs.nodejs_22
           pkgs.yarn
           pkgs.pass
+          pkgs.delta
         ];
 
       homebrew = {
