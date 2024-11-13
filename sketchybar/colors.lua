@@ -1,7 +1,7 @@
 return {
 	black = 0xff15141b,
 	white = 0xffedecee,
-	red = 0xff6EA3FE,
+	red = 0xff15bdf9,
 	green = 0xff61ffca,
 	blue = 0xff82e2ff,
 	yellow = 0xffa277ff,
