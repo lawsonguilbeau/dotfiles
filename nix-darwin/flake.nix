@@ -36,6 +36,7 @@
           pkgs.yarn
           pkgs.pass
           pkgs.delta
+          pkgs.tlrc
         ];
 
       homebrew = {
