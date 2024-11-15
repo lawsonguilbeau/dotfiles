@@ -91,10 +91,20 @@
         '';
 
       system.defaults = {
+        dock.autohide = true;
+        dock.mru-spaces = false;
+        finder.AppleShowAllExtensions = true;
+        finder.FXPreferredViewStyle = "icnv";
         loginwindow.GuestEnabled = false;
+        loginwindow.SHOWFULLNAME = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
+        screencapture.location = "~/Downloads";
+        screensaver.askForPasswordDelay = 10;
       };
+
+      # Added functionality for TouchID while using sudo
+      security.pam.enableSudoTouchIdAuth = true;
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
