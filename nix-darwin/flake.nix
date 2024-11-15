@@ -96,6 +96,9 @@
         NSGlobalDomain.KeyRepeat = 2;
       };
 
+      # Add Touch ID for sudo here
+      security.pam.enableSudoTouchIDAuth = true;
+
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
@@ -124,6 +127,7 @@
     darwinConfigurations."Lawsons-MacBook-Pro" = nix-darwin.lib.darwinSystem {
       modules = [ 
       configuration
+      ./modules/touchid.nix  # Import the custom Touch ID module
       nix-homebrew.darwinModules.nix-homebrew
         {
           nix-homebrew = {
