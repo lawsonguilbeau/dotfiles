@@ -18,49 +18,48 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
+          pkgs.aerospace
+          pkgs.bat
+          pkgs.colorls
+          pkgs.delta
+          pkgs.fd
+          pkgs.fzf
+          pkgs.jq
+          pkgs.lazygit
           pkgs.mkalias
           pkgs.neovim
-          pkgs.tmux
-          pkgs.lazygit
-          pkgs.colorls
-          pkgs.fzf
+          pkgs.nodejs_22
+          pkgs.pass
           pkgs.ripgrep
-          pkgs.fd
           pkgs.skhd
           pkgs.spicetify-cli
-          pkgs.jq
-          pkgs.yazi
-          pkgs.bat
-          pkgs.aerospace
-          pkgs.nodejs_22
-          pkgs.yarn
-          pkgs.pass
-          pkgs.delta
           pkgs.tlrc
+          pkgs.tmux
+          pkgs.yarn
+          pkgs.yazi
         ];
 
       homebrew = {
         enable = true;
         brews = [
-          "sketchybar"
           "borders"
-          "switchaudio-osx"
           "lua"
           "nowplaying-cli"
+          "sketchybar"
+          "switchaudio-osx"
         ];
         casks = [
-          "discord"
-          "wezterm"
-          "mos"
-          "spotify"
-          "karabiner-elements"
-          "sf-symbols"
-          "raycast"
-          "obsidian"
-          "selfcontrol"
-          "command-x"
-          "spotify"
           "arc"
+          "command-x"
+          "discord"
+          "karabiner-elements"
+          "mos"
+          "obsidian"
+          "raycast"
+          "selfcontrol"
+          "sf-symbols"
+          "spotify"
+          "wezterm"
         ];
         taps = [
           "FelixKratz/formulae"
