@@ -43,8 +43,12 @@
         enable = true;
         brews = [
           "borders"
+          "cmake"
+          "hwloc"
+          "libuv"
           "lua"
           "nowplaying-cli"
+          "openssl"
           "sketchybar"
           "switchaudio-osx"
         ];
@@ -53,6 +57,7 @@
           "command-x"
           "discord"
           "karabiner-elements"
+          "monero-wallet"
           "mos"
           "obsidian"
           "raycast"
