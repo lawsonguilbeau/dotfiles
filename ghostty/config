@@ -1,0 +1,24 @@
+# font
+font-family = "MesloLGS Nerd Font Mono"
+font-size = "19"
+
+# theme
+theme = "tokyonight"
+
+# clears titlebar
+title = " "
+macos-titlebar-style = "hidden"
+
+# custom ghostty app icon
+macos-icon = "custom-style"
+macos-icon-frame = "chrome"
+
+# window padding
+window-padding-x = "1, 1"
+window-padding-y = "10, 1"
+
+# keybinds
+keybind = "global:ctrl+grave_accent=toggle_quick_terminal"
+
+# updates
+auto-update = "check"
