@@ -56,6 +56,7 @@
           "arc"
           "command-x"
           "discord"
+          "ghostty"
           "karabiner-elements"
           "monero-wallet"
           "mos"
