@@ -33,6 +33,7 @@
           pkgs.ripgrep
           pkgs.skhd
           pkgs.spicetify-cli
+          pkgs.syncthing
           pkgs.tlrc
           pkgs.tmux
           pkgs.yarn
