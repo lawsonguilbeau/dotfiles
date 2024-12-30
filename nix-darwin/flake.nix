@@ -54,6 +54,7 @@
         ];
         casks = [
           "arc"
+          "balenaetcher"
           "command-x"
           "discord"
           "ghostty"
