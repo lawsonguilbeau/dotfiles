@@ -22,3 +22,5 @@ keybind = "global:ctrl+grave_accent=toggle_quick_terminal"
 
 # updates
 auto-update = "check"
+
+cursor-style = "block"
