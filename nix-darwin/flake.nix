@@ -54,9 +54,9 @@
           "switchaudio-osx"
         ];
         casks = [
-          "arc"
           "command-x"
           "discord"
+          "firefox"
           "ghostty"
           "karabiner-elements"
           "monero-wallet"
