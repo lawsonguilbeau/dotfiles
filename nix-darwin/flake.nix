@@ -23,6 +23,7 @@
           pkgs.colorls
           pkgs.delta
           pkgs.fd
+          pkgs.ffmpeg
           pkgs.fzf
           pkgs.jq
           pkgs.lazygit
