@@ -19,6 +19,7 @@
       environment.systemPackages =
         [ 
           pkgs.aerospace
+          pkgs.ani-cli
           pkgs.bat
           pkgs.colorls
           pkgs.delta
@@ -59,6 +60,7 @@
           "discord"
           "firefox"
           "ghostty"
+          "iina"
           "karabiner-elements"
           "monero-wallet"
           "mos"
