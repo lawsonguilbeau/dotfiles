@@ -124,3 +124,7 @@ run = "move-node-to-workspace 4"
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
+if.app-id = 'com.colliderli.iina'
+run = "move-node-to-workspace 6"
