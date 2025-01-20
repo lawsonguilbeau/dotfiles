@@ -32,6 +32,7 @@
           pkgs.neovim
           pkgs.nodejs_22
           pkgs.pass
+          pkgs.pipes
           pkgs.ripgrep
           pkgs.skhd
           pkgs.spicetify-cli
