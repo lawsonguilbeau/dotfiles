@@ -41,6 +41,7 @@
           pkgs.tmux
           pkgs.yarn
           pkgs.yazi
+          pkgs.yt-dlp
         ];
 
       homebrew = {
