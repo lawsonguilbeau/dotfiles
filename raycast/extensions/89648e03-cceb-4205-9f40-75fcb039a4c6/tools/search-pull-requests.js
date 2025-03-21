@@ -880,9 +880,14 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):R
   }
   ${MU}
 `,zU=$.default`
-  query repositoryCollaboratorsForPullRequests($owner: String!, $name: String!, $pullRequestNumber: Int!) {
+  query repositoryCollaboratorsForPullRequests(
+    $owner: String!
+    $name: String!
+    $pullRequestNumber: Int!
+    $searchQuery: String
+  ) {
     repository(owner: $owner, name: $name) {
-      collaborators(first: 25) {
+      collaborators(first: 25, query: $searchQuery) {
         totalCount
         nodes {
           ... on User {

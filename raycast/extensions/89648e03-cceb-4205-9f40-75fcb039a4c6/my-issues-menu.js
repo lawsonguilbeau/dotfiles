@@ -895,9 +895,14 @@ function print() { __p += __j.call(arguments, '') }
   }
   ${nG}
 `,AG=le.default`
-  query repositoryCollaboratorsForPullRequests($owner: String!, $name: String!, $pullRequestNumber: Int!) {
+  query repositoryCollaboratorsForPullRequests(
+    $owner: String!
+    $name: String!
+    $pullRequestNumber: Int!
+    $searchQuery: String
+  ) {
     repository(owner: $owner, name: $name) {
-      collaborators(first: 25) {
+      collaborators(first: 25, query: $searchQuery) {
         totalCount
         nodes {
           ... on User {
