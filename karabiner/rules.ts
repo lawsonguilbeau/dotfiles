@@ -70,7 +70,7 @@ const rules: KarabinerRules[] = [
     o: {
       s: app("Safari"),
       d: app("Discord"),
-      i: app("WezTerm"),
+      i: app("Ghostty"),
       z: app("zoom.us"),
       t: app("Messages"),
       f: app("Finder"),
@@ -84,7 +84,7 @@ const rules: KarabinerRules[] = [
       e: app("Mail"),
       a: app("Steam"),
       v: app("ChatGPT"),
-      b: app("Arc"),
+      b: app("Firefox"),
       n: app("Obsidian"),
     },
 
