@@ -3,16 +3,15 @@ return {
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
   opts = {
-    -- add any opts here
-    -- for example
-    provider = "openai",
-    openai = {
-      endpoint = "https://openrouter.ai/api/v1",
-      model = "anthropic/claude-3-sonnet-20240229",
+    -- Configure to use Anthropic directly
+    provider = "claude",
+    claude = {
+      endpoint = "https://api.anthropic.com",
+      model = "claude-3-5-sonnet-20241022",
       api_key = os.getenv("ANTHROPIC_API_KEY"),
       timeout = 30000, -- Timeout in milliseconds
       temperature = 0,
-      max_completion_tokens = 8192,
+      max_tokens = 8192,
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
