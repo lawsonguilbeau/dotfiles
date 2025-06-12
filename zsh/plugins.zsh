@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Prompt configuration - choose between Starship and Powerlevel10k
 # Set USE_STARSHIP=true to use Starship, false to use Powerlevel10k
-USE_STARSHIP=true
+USE_STARSHIP=false
 
 if [[ "$USE_STARSHIP" == "true" ]]; then
     # Initialize Starship prompt
