@@ -1,0 +1,52 @@
+[user]
+    name = Lawson Guilbeau
+    email = lawsonguilbeau@gmail.com
+
+[core]
+    editor = nvim
+    pager = delta
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = tokyonight_night
+    plus-style = "syntax #003800"
+    minus-style = "syntax #3f0001"
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = !gitk
+    tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    cleanup = "!git branch --merged | grep -v '\*\|main\|develop' | xargs -n 1 git branch -d"
+
+[push]
+    default = simple
+    autoSetupRemote = true
+
+[pull]
+    rebase = false
+
+[color]
+    ui = true
+

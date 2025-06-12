@@ -2,10 +2,13 @@
 
 # Better command aliases
 alias lz="lazygit"
-alias ls="colorls"
-alias ll="colorls -la"
-alias tree="colorls --tree"
+alias ld="lazydocker"
+alias ls="eza --icons"
+alias ll="eza -la --icons"
+alias la="eza -a --icons"
+alias tree="eza --tree --icons"
 alias cat="bat"
+alias grep="rg"
 alias vi="nvim"
 alias vim="nvim"
 alias ff="fzf --preview='bat --color=always {}'"
@@ -42,4 +45,15 @@ alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias tmuxconfig="$EDITOR ~/.config/.tmux.conf"
 alias zshexports="$EDITOR ~/.config/zsh/exports.zsh"
 alias zshaliases="$EDITOR ~/.config/zsh/aliases.zsh"
+alias starshipconfig="$EDITOR ~/.config/starship.toml"
+alias gitconfig="$EDITOR ~/.config/.gitconfig"
+
+# Prompt switching
+alias use-starship="sed -i '' 's/USE_STARSHIP=false/USE_STARSHIP=true/' ~/.config/zsh/plugins.zsh && exec zsh"
+alias use-p10k="sed -i '' 's/USE_STARSHIP=true/USE_STARSHIP=false/' ~/.config/zsh/plugins.zsh && exec zsh"
+
+# Modern tool aliases
+alias z="zoxide"
+alias zi="zoxide query -i"
+alias zq="zoxide query"
 

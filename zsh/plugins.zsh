@@ -14,11 +14,20 @@ plugins=(
 # Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-# Powerlevel10k theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# Prompt configuration - choose between Starship and Powerlevel10k
+# Set USE_STARSHIP=true to use Starship, false to use Powerlevel10k
+USE_STARSHIP=false
 
-# Load p10k configuration if it exists
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [[ "$USE_STARSHIP" == "true" ]]; then
+    # Initialize Starship prompt
+    eval "$(starship init zsh)"
+else
+    # Powerlevel10k theme
+    source ~/powerlevel10k/powerlevel10k.zsh-theme
+    
+    # Load p10k configuration if it exists
+    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+fi
 
 # FZF integration
 eval "$(fzf --zsh)"

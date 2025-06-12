@@ -1,0 +1,167 @@
+# Starship configuration mimicking Powerlevel10k rainbow style
+# Based on your p10k configuration with frames and 2-line layout
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Main configuration
+format = """$all$line_break$character"""
+add_newline = true
+right_format = "$status$cmd_duration$jobs$time"
+
+# Character (prompt symbol)
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+vicmd_symbol = '[❮](bold yellow)'
+
+# OS icon (equivalent to p10k os_icon)
+[os]
+format = '[$symbol]($style)'
+style = 'bold blue'
+disabled = false
+
+[os.symbols]
+macos = '🍎'
+
+# Directory (equivalent to p10k dir)
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style)'
+style = 'bold cyan'
+read_only = '🔒'
+read_only_style = 'red'
+truncation_length = 3
+truncate_to_repo = true
+fish_style_pwd_dir_length = 1
+
+# Git branch and status (equivalent to p10k vcs)
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style)'
+symbol = '🌱 '
+style = 'bold purple'
+truncation_length = 20
+truncation_symbol = '…'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+style = 'bold red'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+conflicted = '🏳'
+deleted = '🗑'
+divergued = '⇕⇡${ahead_count}⇣${behind_count}'
+modified = '📝${count}'
+renamed = '👅'
+staged = '[++${count}](green)'
+stashed = '📦'
+untracked = '🤷${count}'
+
+# Status (exit code)
+[status]
+format = '[$symbol$status]($style)'
+symbol = '🔴 '
+style = 'bold red'
+disabled = false
+
+# Command duration
+[cmd_duration]
+format = '[⏱ $duration]($style)'
+style = 'bold yellow'
+min_time = 2000
+
+# Background jobs
+[jobs]
+format = '[⚙ $number]($style)'
+style = 'bold blue'
+number_threshold = 1
+symbol_threshold = 1
+
+# Time
+[time]
+format = '[🕙 $time]($style)'
+style = 'bold white'
+disabled = false
+time_format = '%I:%M %p'
+
+# Python virtual environment
+[python]
+format = '[🐍 $version( \($virtualenv\))]($style)'
+style = 'bold green'
+pyenv_version_name = true
+pyenv_prefix = 'pyenv '
+
+# Node.js
+[nodejs]
+format = '[🟢 $version]($style)'
+style = 'bold green'
+detect_files = ['package.json', '.node-version']
+detect_folders = ['node_modules']
+
+# Rust
+[rust]
+format = '[🦀 $version]($style)'
+style = 'bold red'
+
+# Go
+[golang]
+format = '[🐹 $version]($style)'
+style = 'bold cyan'
+
+# Docker context
+[docker_context]
+format = '[🐳 $context]($style)'
+style = 'bold blue'
+
+# Kubernetes context
+[kubernetes]
+format = '[⎈ $context( \($namespace\))]($style)'
+style = 'bold cyan'
+disabled = false
+
+# AWS profile
+[aws]
+format = '[☁️ $profile( \($region\))]($style)'
+style = 'bold yellow'
+
+# Package version
+[package]
+format = '[📦 $version]($style)'
+style = 'bold 208'
+disabled = true
+
+# Line break
+[line_break]
+disabled = false
+
+# Custom prompt elements for a more p10k-like experience
+[custom.separator]
+command = 'echo ""'
+when = 'true'
+format = '[](bold white)'
+description = 'Separator'
+
+# Vi mode indicator
+[shell]
+format = '[$indicator]($style)'
+style = 'bold yellow'
+disabled = false
+
+# Memory usage (disabled by default like in your p10k)
+[memory_usage]
+format = '[🐏 $ram( | $swap)]($style)'
+style = 'bold dimmed white'
+threshold = -1
+disabled = true
+
+# Battery (for laptops)
+[battery]
+format = '[🔋$percentage]($style)'
+full_symbol = '🔋'
+charging_symbol = '⚡️'
+discharging_symbol = '💀'
+disabled = true
+
+[[battery.display]]
+threshold = 30
+style = 'bold red'
+
