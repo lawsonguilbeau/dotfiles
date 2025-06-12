@@ -43,6 +43,7 @@ alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 # Quick access to config files
 alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias tmuxconfig="$EDITOR ~/.config/.tmux.conf"
+alias tmuxhelp="bat ~/.config/tmux-cheatsheet.md"
 alias zshexports="$EDITOR ~/.config/zsh/exports.zsh"
 alias zshaliases="$EDITOR ~/.config/zsh/aliases.zsh"
 alias starshipconfig="$EDITOR ~/.config/starship.toml"
