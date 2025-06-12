@@ -18,7 +18,7 @@ NC='\033[0m' # No Color
 # Configuration
 DOTFILES_DIR="$HOME/.config"
 REMOTE_NAME="origin"
-DEFAULT_BRANCH="main"
+DEFAULT_BRANCH="master"
 
 # Helper functions
 print_step() {
