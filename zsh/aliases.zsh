@@ -58,3 +58,13 @@ alias z="zoxide"
 alias zi="zoxide query -i"
 alias zq="zoxide query"
 
+# Dotfiles management
+alias dotsync="~/.config/scripts/sync-dotfiles.sh"
+alias dotbackup="~/.config/scripts/backup-dotfiles.sh"
+alias dotinstall="~/.config/scripts/install-dotfiles.sh"
+
+# Project management
+alias newproject="~/.config/scripts/organize-projects.sh create"
+alias listprojects="~/.config/scripts/organize-projects.sh list"
+alias openproject="~/.config/scripts/organize-projects.sh open"
+

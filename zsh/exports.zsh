@@ -22,6 +22,7 @@ export HISTSIZE=10000
 
 # Path additions
 export PATH="$PATH:/Users/lawsonguilbeau/.spicetify"
+export PATH="$PATH:$HOME/.config/scripts"
 
 # FZF theme configuration
 fg="#CBE0F0"
