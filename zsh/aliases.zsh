@@ -53,8 +53,8 @@ alias gitconfig="$EDITOR ~/.config/.gitconfig"
 alias use-starship="sed -i '' 's/USE_STARSHIP=false/USE_STARSHIP=true/' ~/.config/zsh/plugins.zsh && exec zsh"
 alias use-p10k="sed -i '' 's/USE_STARSHIP=true/USE_STARSHIP=false/' ~/.config/zsh/plugins.zsh && exec zsh"
 
-# Modern tool aliases
-alias z="zoxide"
+# Modern tool aliases (z function is provided by zoxide init)
+# alias z="zoxide"  # Commented out - z function is provided by 'eval "$(zoxide init zsh)"'
 alias zi="zoxide query -i"
 alias zq="zoxide query"
 

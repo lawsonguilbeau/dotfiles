@@ -20,9 +20,4 @@ done
 # Unset the config variable
 unset config
 
-# Optional: Enable Homebrew completions if available
-if type brew &>/dev/null; then
-    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-    autoload -Uz compinit
-    compinit
-fi
+# Note: Homebrew completions and compinit are handled in main ~/.zshrc
