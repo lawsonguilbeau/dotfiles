@@ -18,6 +18,12 @@
       "title": "Search Svelte Docs",
       "description": "Search the svelte docs directly in Raycast",
       "mode": "view"
+    },
+    {
+      "name": "cli",
+      "title": "Compose CLI Command",
+      "description": "Compose an sv cli command",
+      "mode": "view"
     }
   ],
   "tools": [
@@ -41,14 +47,14 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.64.4",
+    "@raycast/api": "^1.103.0",
     "@raycast/utils": "^1.10.1",
     "valibot": "^1.0.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
-    "@types/node": "20.8.10",
-    "@types/react": "18.2.27",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
     "eslint": "^8.51.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
@@ -60,6 +66,10 @@
     "lint": "ray lint",
     "publish": "npx @raycast/api@latest publish"
   },
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
   "ai": {
     "instructions": "The query that you should pass to the tool is used to filter by include so avoid using common words that can be found all over the documentation. For example don't include common words like 'in', '5' or even 'svelte'...just pass a set of keywords that can help filter a large list.",
     "evals": [
