@@ -2,8 +2,8 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "video-downloader",
   "title": "Video Downloader",
-  "description": "Download videos from YouTube, Twitter, Twitch, Instagram, Bilibili and more using yt-dlp CLI",
-  "icon": "youtube.png",
+  "description": "Download videos from YouTube, 𝕏, Twitch, Instagram, Bilibili and more",
+  "icon": "extension-icon.png",
   "author": "vimtor",
   "contributors": [
     "pernielsentikaer",
@@ -12,7 +12,8 @@
     "xmorse",
     "litomore",
     "anwarulislam",
-    "yusifaliyevpro"
+    "yusifaliyevpro",
+    "xilopaint"
   ],
   "categories": [
     "Applications",
