@@ -1212,6 +1212,18 @@ function print() { __p += __j.call(arguments, '') }
           title
         }
       }
+      owner {
+        __typename
+        ... on Organization {
+          projectsV2(first: 50) {
+            totalCount
+            nodes {
+              id
+              title
+            }
+          }
+        }
+      }
       pullRequestTemplates {
         body
       }

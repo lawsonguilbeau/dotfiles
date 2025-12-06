@@ -1216,6 +1216,18 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):V
           title
         }
       }
+      owner {
+        __typename
+        ... on Organization {
+          projectsV2(first: 50) {
+            totalCount
+            nodes {
+              id
+              title
+            }
+          }
+        }
+      }
       pullRequestTemplates {
         body
       }
