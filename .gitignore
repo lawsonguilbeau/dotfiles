@@ -1,0 +1,31 @@
+cd ~/.config
+
+cat << 'EOF' > .gitignore
+# Ignore files and directories at the top level
+/*
+
+# Unignore the target folders and all their contents
+!bat/
+!bat/**
+!kitty/
+!kitty/**
+!nvim/
+!nvim/**
+!neofetch/
+!neofetch/**
+!waybar/
+!waybar/**
+!rofi/
+!rofi/**
+!ghostty/
+!ghostty/**
+!wpaperd/
+!wpaperd/**
+!hypr/
+!hypr/**
+!hyprlock/
+!hyprlock/**
+
+# Keep .gitignore tracked
+!.gitignore
+EOF
