@@ -28,6 +28,11 @@ cat << 'EOF' > .gitignore
 !spicetify/
 !spicetify/**
 
+# Unignore individual files
+!README.md
+!.tmux.conf
+!.gitconfig
+
 # Keep .gitignore tracked
 !.gitignore
 EOF
