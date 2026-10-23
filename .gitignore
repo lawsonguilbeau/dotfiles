@@ -25,6 +25,8 @@ cat << 'EOF' > .gitignore
 !hypr/**
 !hyprlock/
 !hyprlock/**
+!spicetify/
+!spicetify/**
 
 # Keep .gitignore tracked
 !.gitignore
